@@ -77,6 +77,15 @@ Raises Input Error "Please enter song name in string format"
 """
 music.tracker = MusicTracker()
 music_tracker.add_song(800) # => "Please enter song name in string format"
+
+"""
+Given no parameters
+Returns all songs on list correctly"
+"""
+music.tracker = MusicTracker()
+music_tracker.add_song("Breathless")
+music_tracker.add_song("Happy Birthday")
+music_tracker.add_song("Disco Inferno") # => ['Breathless', 'Happy Birthday', 'Disco Inferno']
 ```
 
 _Encode each example as a test. You can add to the above list as you go._
